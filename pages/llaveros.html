@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLAVEROS</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="/css/stylesIndex.css">
+
+    <script>
+        function agregarAlCarrito(nombre, precio, cantidadId) {
+        const cantidad = parseInt(document.getElementById(cantidadId).value);
+        const producto = { nombre: nombre, precio: precio, cantidad: cantidad };
+               
+               
+        document.cookie = `carrito=${JSON.stringify(producto)}; path=/`;
+    }
+
+</script>
+    
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fs-2 fw-bold multi-line-brand text-center">
+                <span class="text-black-80 d-block">PRODUCTOS<br>PERSONALIZADOS</span>
+            </a>
+            <a class="navbar-brand"><img src="/pages/assets/images/Logo3d.png" class="img-fluid" alt="LOGO PLANNET3D"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarDark">
+                <ul class="navbar-nav ms-auto mb-2 mb-xl-0 fs-5 p-2 text-center">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="llaveros.html">LLAVEROS</a></li>
+                            <li><a class="dropdown-item" href="portamemorias.html">PORTA MEMORIAS</a></li>
+                            <li><a class="dropdown-item" href="soportecelulares.html">SOPORTE PARA CELULARES</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">REGISTRO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">CARRITO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+<main>
+    
+    <section class="container-fluid product-details">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="product-box">
+                    <h2 class="text-center">LLAVERO INSTAX</h2>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="galeria">
+                                <a href="#img1">
+                                    <img src="assets/images/llavero1.png" class="img-fluid" alt="llavero 1" />
+                                </a>
+                                <a href="#_" class="lightbox" id="img1">
+                                    <img src="assets/images/llavero1.png" class="img-fluid" alt="llavero 1 Ampliada" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="description mt-md-0 mt-3">
+                                
+                                <p class="price">$99.99</p>
+                                <div class="input-group mb-3">
+                                    <input type="number" id="cantidad2" name="cantidad2" class="form-control" value="1" min="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary buy-button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid product-details">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="product-box">
+                    <h2 class="text-center">LLAVERO PORTA FOTOS</h2>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="galeria">
+                                <a href="#img2">
+                                    <img src="assets/images/llavero2.png" class="img-fluid" alt="llavero 2 " />
+                                </a>
+                                <a href="#_" class="lightbox" id="img2">
+                                    <img src="assets/images/llavero2.png" class="img-fluid" alt="llavero 2 Ampliada" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="description mt-md-0 mt-3">
+                                
+                                <p class="price">$99.99</p>
+                                <div class="input-group mb-3">
+                                    <input type="number" id="cantidad2" name="cantidad2" class="form-control" value="1" min="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary buy-button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid product-details">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="product-box">
+                    <h2 class="text-center">LLAVERO CAMISETA DE FUTBOL</h2>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="galeria">
+                                <a href="#img3">
+                                    <img src="assets/images/llavero3.png" class="img-fluid" alt="llavero 3" />
+                                </a>
+                                <a href="#_" class="lightbox" id="img3">
+                                    <img src="assets/images/llavero3.png" class="img-fluid" alt="llavero 3 Ampliada" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="description mt-md-0 mt-3">
+                                
+                                <p class="price">$99.99</p>
+                                <div class="input-group mb-3">
+                                    <input type="number" id="cantidad2" name="cantidad2" class="form-control" value="1" min="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary buy-button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main> 
+
+   
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 PLANNET3D. Todos los derechos reservados.</p>
+            <p>Síguenos en nuestras redes sociales.</p>
+            
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/people/Plannet3D/100075860816853/" target="_blank" class="social-button"><img src="./assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/plannet3d" target="_blank" class="social-button"><img src="./assets/images/instagram.png" alt="Instagram"></a>
+                    <a href="" target="_blank" class="social-button"><img src="./assets/images/Whatsapp.png" alt="Whatsapp"></a>
+                    
+                </div>
+            
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            var productosLink = document.getElementById('productosLink');
+    
+            
+            productosLink.addEventListener("click", function(event) {
+                
+                event.preventDefault();
+                
+                
+                var dropdownMenu = document.querySelector('.dropdown-menu');
+                dropdownMenu.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
