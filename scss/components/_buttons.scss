@@ -1,0 +1,45 @@
+.btn-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    
+}
+
+
+
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: $color-primary;
+    color: $color-text-tertiary;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    
+}
+
+.boton-enlace:hover {
+    background-color: $color-secondary;
+    
+}
+
+
+.buy-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: $color-primary;
+    border: none;
+    color: $color-fifth;
+    transition: background-color 0.3s ease;
+}
+.buy-button:hover {
+    background-color: $color-secondary;
+}

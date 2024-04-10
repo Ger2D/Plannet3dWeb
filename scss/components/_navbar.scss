@@ -1,0 +1,41 @@
+.navbar {
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: 1000;
+    background-color: $color-tertiary;
+  
+    &.custom-navbar {
+        background-color: $color-tertiary;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        
+        img {
+            max-width: 120px;
+            margin-left: 10px;
+            margin-right: 50px;
+        }
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: $color-secondary;
+        box-shadow: 0 4px 8px $color-tertiary;
+        z-index: 1000;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: $color-text-tertiary;
+            font-size: 1.1em;
+
+            &:hover {
+                color: $color-secondary
+            }
+        }
+    }
+}

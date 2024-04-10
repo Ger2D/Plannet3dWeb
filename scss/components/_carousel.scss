@@ -1,0 +1,47 @@
+
+
+
+#carrusel-box {
+    overflow: hidden;
+    width: 50%;
+    max-width: 1200px; 
+    margin: 0  auto;
+  }
+  
+  #carrusel-contenido {
+    display: flex;
+    animation: automatizacion 15s infinite linear;
+  }
+  
+  .imagenes {
+    width: 47%; 
+    height: auto; 
+  }
+  
+  .carrusel-element {
+    flex: 0 0 100%; 
+  }
+  
+  @keyframes automatizacion {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(-100%);
+    }
+    55% {
+      transform: translateX(-100%);
+    }
+    60% {
+      transform: translateX(-200%);
+    }
+    85% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
