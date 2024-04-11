@@ -4,51 +4,19 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="llaveros personalizados, soportes para celulares, cajas para memorias SD, impresión 3D, productos personalizados, accesorios personalizados">
-    <meta name="description" content="Impresión 3D de alta calidad para prototipos, piezas personalizadas y proyectos especiales. Ofrecemos servicios de diseño, modelado y fabricación utilizando tecnología avanzada de impresión 3D. ¡Transforma tus ideas en realidad con nosotros!">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARRITO DE COMPRAS</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="/css/main.css">  
-    <link rel="icon" href="/pages/assets/images/favicon.png" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Impresión 3D de alta calidad para prototipos, piezas personalizadas y proyectos especiales. Ofrecemos servicios de diseño, modelado y fabricación utilizando tecnología avanzada de impresión 3D. ¡Transforma tus ideas en realidad con nosotros!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QUIENES SOMOS</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="icon" href="../pages/assets/images/favicon.png" type="image/x-icon">
+    </head>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            mostrarCarrito();
-        });
-        
-        function mostrarCarrito() {
-            const listaCarrito = document.getElementById('lista-carrito');
-            listaCarrito.innerHTML = '';
-        
-            
-            const cookie = document.cookie.split(';').find(cookie => cookie.trim().startsWith('carrito='));
-            if (cookie) {
-                const producto = JSON.parse(cookie.split('=')[1]);
-                const listItem = document.createElement('li');
-                listItem.textContent = `${producto.nombre} - Cantidad: ${producto.cantidad} - Precio: $${producto.precio * producto.cantidad}`;
-                listaCarrito.appendChild(listItem);
-            }
-        
-            calcularTotal();
-        }
-        
-        function calcularTotal() {
-            
-            const cookie = document.cookie.split(';').find(cookie => cookie.trim().startsWith('carrito='));
-            let total = 0;
-            if (cookie) {
-                const producto = JSON.parse(cookie.split('=')[1]);
-                total = producto.precio * producto.cantidad;
-            }
-            document.getElementById('total').textContent = `$${total.toFixed(2)}`;
-        }
-    </script>
+   
 
 </head>
 
@@ -59,7 +27,7 @@
                 <a class="navbar-brand fs-2 fw-bold multi-line-brand text-center">
                     <span class="text-black-80 d-block">PRODUCTOS<br>PERSONALIZADOS</span>
                 </a>
-                <a class="navbar-brand"><img src="/pages/assets/images/Logo3d.png" class="img-fluid" alt="LOGO PLANNET3D"></a>
+                <a class="navbar-brand"><img src="../pages/assets/images/Logo3d.png" class="img-fluid" alt="LOGO PLANNET3D"></a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -124,24 +92,9 @@
                 
             </div>
         </footer>
-        <script src="/js/bootstrap.bundle.min.js"></script> 
+        <script src="../js/bootstrap.bundle.min.js"></script> 
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              
-                var productosLink = document.getElementById('productosLink');
         
-                
-                productosLink.addEventListener("click", function(event) {
-                    
-                    event.preventDefault();
-                    
-                    
-                    var dropdownMenu = document.querySelector('.dropdown-menu');
-                    dropdownMenu.classList.toggle('show');
-                });
-            });
-        </script>
     </body>
     
     
