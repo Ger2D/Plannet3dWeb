@@ -320,7 +320,7 @@ input[type=email] {
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-image: url("/pages/assets/images/fondo.png");
+  background-image: url("./pages/assets/images/fondo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
