@@ -1,3 +1,17 @@
+// Mixins
+
+@mixin button-border($border-color, $border-width, $border-radius) {
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+  }
+
+  @mixin input-border($border-color, $border-width, $border-radius) {
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+  }
+
+  
+
 @import "utilities/variables";
 @import "base/reset";
 @import "base/typography";
@@ -12,3 +26,5 @@
 @import "layout/footer";
 @import "layout/forms";
 @import "base/body";
+
+

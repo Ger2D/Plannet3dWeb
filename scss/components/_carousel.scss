@@ -1,47 +1,30 @@
 
 
 
-#carrusel-box {
-    overflow: hidden;
-    width: 50%;
-    max-width: 1200px; 
-    margin: 0  auto;
-  }
+
   
-  #carrusel-contenido {
-    display: flex;
-    animation: automatizacion 15s infinite linear;
-  }
   
-  .imagenes {
-    width: 47%; 
-    height: auto; 
+  .carousel-item img {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
-  
-  .carrusel-element {
-    flex: 0 0 100%; 
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
   }
-  
-  @keyframes automatizacion {
-    0% {
-      transform: translateX(0);
-    }
-    25% {
-      transform: translateX(0);
-    }
-    30% {
-      transform: translateX(-100%);
-    }
-    55% {
-      transform: translateX(-100%);
-    }
-    60% {
-      transform: translateX(-200%);
-    }
-    85% {
-      transform: translateX(-200%);
-    }
-    100% {
-      transform: translateX(-300%);
-    }
+  .carousel-caption h5, .carousel-caption p {
+    color: $color-fifth;
   }
+
+  .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: $color-primary; 
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: ''; 
+      border: none; 
+      color: $color-fifth; 
+    }

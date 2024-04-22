@@ -64,26 +64,42 @@
  
 
                     <main>
-                        <div id="carrusel-box">
-                            <div id="carrusel-contenido">
-                                <div class="carrusel-element">
-                                    
-                                    <img class="imagenes" src="pages/assets/images/llavero1.png" alt="llavero1" class="img-fluid">
+                        <div class="container">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="pages/assets/images/llavero1.png" class="d-block mx-auto img-fluid" alt="...">
+                                  <div class="carousel-caption d-none d-md-block"">
+                                    <h5>LLAVEROS INSTAX</h5>
+                                    <p>Lleva tus fotos con todo el estilo</p>
+                                  </div>
                                 </div>
-
-                                <div class="carrusel-element">
-                                    <img class="imagenes" src="pages/assets/images/llavero2.png" alt="lavero2" class="img-fluid">
+                                <div class="carousel-item">
+                                  <img src="pages/assets/images/llavero2.png" class="d-block mx-auto img-fluid" alt="...">
+                                  <div class="carousel-caption d-none d-md-block"">
+                                    <h5>LLAVERO PORTA FOTOS</h5>
+                                    <p>Llaverito con la mejor onda, sumale tu nombre!</p>
+                                  </div>
                                 </div>
-                                
-                                <div class="carrusel-element">
-                                    <img class="imagenes" src="pages/assets/images/llavero3.png" alt="lavero3" class="img-fluid">
+                                <div class="carousel-item">
+                                  <img src="pages/assets/images/llavero3.png" class="d-block mx-auto img-fluid" alt="...">
+                                  <div class="carousel-caption d-none d-md-block"">
+                                    <h5>Llavero camiseta de fútbol</h5>
+                                    <p>Elegí el de tu equipo!</p>
+                                  </div>
                                 </div>
-
-                                <div class="carrusel-element">
-                                    <img class="imagenes" src="pages/assets/images/llavero1.png" alt="lavero1" class="img-fluid">
-                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                              </button>
                             </div>
-                        </div>
+                          </div>
+                        
                     </main>
                     
 
@@ -105,6 +121,8 @@
 
   <script src="./js/bootstrap.bundle.min.js"></script> 
 
+  
+  
   <script>
     document.addEventListener("DOMContentLoaded", function() {
         

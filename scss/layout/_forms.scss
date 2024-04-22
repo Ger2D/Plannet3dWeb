@@ -10,24 +10,34 @@ label {
     margin-bottom: 8px;
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 1px solid $color-quaternary;
-    border-radius: 4px;
+
+.input-base {
+  @include input-border($color-secondary, 2px, 50px);
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid $color-text-tertiary;
+  border-radius: 4px;
 }
 
+input {
+    @extend .input-base;
+}
+
+
 input[type="submit"] {
+    @include input-border($color-secondary, 2px, 50px);
     background-color: $color-primary;
     color: $color-fifth;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
+
 input[type="submit"]:hover {
-    background-color: $color-primary;
+    @include input-border($color-secondary, 2px, 50px);
+    background-color: $color-secondary;
 }
 
 
@@ -50,17 +60,4 @@ input[type="email"] {
     box-sizing: border-box;
 }
 
-input[type="submit"] {
-    width: 100%;
-    background-color: $color-primary;
-    color: $color-fifth;
-    padding: 10px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: $color-secondary;
-}
 
